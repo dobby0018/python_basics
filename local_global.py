@@ -1,9 +1,10 @@
 x = "awesomewe"
 
 def myfunc():
-  x = "fantastic"
+  global y
+  y= "fantastic"
   print("Python is " + x)
 
 myfunc()
 
-print("Python is " + x)
+print("Python is " + y)
