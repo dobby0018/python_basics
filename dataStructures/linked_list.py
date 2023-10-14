@@ -15,12 +15,12 @@ class LinkedList:
         new_node = Node(data)
         if not self.head:
             self.head = new_node
-            print("self.head",self.head)
+            
             return
         current = self.head
         while current.next:
             current = current.next
-            print("current next",current.next)
+            
         current.next = new_node
 
     def prepend(self, data):
